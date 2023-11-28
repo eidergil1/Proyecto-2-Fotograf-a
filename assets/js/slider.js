@@ -29,4 +29,16 @@ fotoActiva.src=`./assets/img/slider${ordenSiguiente}_2560.jpg`;
 fotoActiva.setAttribute("orden",ordenSiguiente);
 })
 
-
+/* ESCUCHAMOS CLICK EN LA FLECHA DERECHA */
+flechaDer.addEventListener("click", function(){
+    ordenPrincipal = fotoActiva.getAttribute("orden")
+    ordenPrincipal = Number(ordenPrincipal);
+    
+    if(ordenPrincipal===1){
+    ordenSiguiente = numFotos;
+    }else{
+    ordenSiguiente = ordenPrincipal+1;
+    }
+    fotoActiva.src=`./assets/img/slider${ordenSiguiente}_2560.jpg`;
+    fotoActiva.setAttribute("orden",ordenSiguiente);
+    })

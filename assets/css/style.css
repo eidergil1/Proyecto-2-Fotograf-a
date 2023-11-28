@@ -98,36 +98,36 @@ header .contenedor {
     user-select: none;
 }
 header .contenedor :nth-child(1){
-    font-size: 7.8vw;
+    font-size: 6.8vw;
     line-height: 7vw;
 }
 header .contenedor :nth-child(2){
-    font-size: 5.1vw;
-    line-height: 6.2vw;
+    font-size: 4.4vw;
+    line-height: 5vw;
 }
 header .contenedor :nth-child(3){
-    font-size: 12.4vw;
+    font-size: 10.9vw;
     line-height: 7.4vw;
 }
 header .contenedor :nth-child(4){
-    font-size: 4.1vw;
-    line-height: 7vw;
+    font-size: 3.5vw;
+    line-height: 5.8vw;
 }
 header .contenedor :nth-child(5){
-    font-size: 8.1vw;
-    line-height: 2.2vw;
+    font-size: 7.1vw;
+    line-height: 3.2vw;
 }
 header .contenedor :nth-child(6){
-    font-size: 6.1vw;
-    line-height: 9.4vw;
+    font-size: 5.3vw;
+    line-height: 7.9vw;
 }
 header .contenedor :nth-child(7){
-    font-size: 1.2vw;
-    line-height: 1vw;
+    font-size: 14.4vw;
+    line-height: 8vw;
 }
 header .contenedor :nth-child(8){
     font-size: 1.2vw;
-    line-height: 1vw;
+    line-height: 6vw;
 }
 
 
@@ -141,7 +141,7 @@ h2{
     font-size: 1.8rem;
     color: var(--color2);
     font-weight: 100;
-    margin-top: 2rem;
+    margin-top: 4rem;
 }
 h3{
     width: 100%;
