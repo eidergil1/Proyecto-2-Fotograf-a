@@ -1,13 +1,13 @@
 /* DECLARACIÓN DE VARIABLES */
 
-
 var numFotos = 12;/* número total de fotos para el slider */
 var ordenPrincipal, ordenSiguiente;
 var intervalo;
+var tiempoEspera = 5000;
 
 
-var intervalo = window.setInterval(funcion_random,5000)
 
+/* DECLARACIÓN DE CONSTANTES */
 const flechaIzd = document.getElementById("flechaIzd");
 const flechaDer = document.getElementById("flechaDer");
 const fotoActiva = document.getElementById("fotoActiva");
@@ -15,24 +15,24 @@ const fotoActiva = document.getElementById("fotoActiva");
 console.log(flechaIzd);
 console.log(fotoActiva);
 
+
 /* CÓDIGO PARA LA ACCIÓN DE LAS FLECHAS */
 
 /* ESCUCHAMOS CLICK EN LA FLECHA IZQUIERDA */
 flechaIzd.addEventListener("click", function(){
-ordenPrincipal = fotoActiva.getAttribute("orden");
-ordenPrincipal = Number(ordenPrincipal);
+    ordenPrincipal = fotoActiva.getAttribute("orden");
+    ordenPrincipal = Number(ordenPrincipal);
 
-if(ordenPrincipal===1){
-ordenSiguiente = numFotos;
-}else{
-ordenSiguiente = ordenPrincipal-1;
-}
-fotoActiva.src=`./assets/img/slider${ordenSiguiente}_2560.jpg`;
-fotoActiva.setAttribute("orden",ordenSiguiente);
+    if(ordenPrincipal===1){
+    ordenSiguiente = numFotos;
+    }else{
+    ordenSiguiente = ordenPrincipal-1;
+    }
+    fotoActiva.src=`./assets/img/slider${ordenSiguiente}_2560.jpg`;
+    fotoActiva.setAttribute("orden",ordenSiguiente);
 
-/* temporizador */
-clearInterval(intervalo);
-crear_intervalo();
+    /* temporizador */
+    crear_intervalo(tiempoEspera+2000);
 })
 
 /* (SI QUEREMOS QUE LA FLCHA IZQUIERDA HAGA ALEATORIO) flechaIzd.addEventListener("click",funcion_random) */
@@ -51,12 +51,15 @@ flechaDer.addEventListener("click", function(){
     fotoActiva.setAttribute("orden",ordenSiguiente);
 
     /* temporizador */
-    clearInterval(intervalo);
-    crear_intervalo();
+    crear_intervalo(tiempoEspera+2000);   
+
 })
 
-    /* ZONA DE EJECUCIÓN DE IMAGEN RANDOM CUANDO CARGA LA PÁGINA WEB */
+    
+
+/* ZONA DE EJECUCIÓN DE IMAGEN RANDOM CUANDO CARGA LA PÁGINA WEB */
 funcion_random()
+
 
 /* ZONA DE FUNCIONES*/
 /* FUNCIÓN PARA CAMBIAR LAS FOTOS RANDOM */
@@ -70,9 +73,17 @@ function funcion_random(){
     fotoActiva.setAttribute ("orden",numAleatorio)
 }
 
+
+
+crear_intervalo(tiempoEspera)
+
 /* FUNCIÓN PARA CAMBIAR LAS FOTOS RANDOM CADA X SEGUNDOS */
-function crear_intervalo(){
-    intervalo=window.setInterval(funcion_random,5000)
+function crear_intervalo(valorRecibido){
+
+    if(intervalo != undefined){
+        clearInterval(intervalo)
+    }
+    intervalo=window.setInterval(funcion_random,valorRecibido)
 }
 /* CAMBIO DE AUTOMATICO DE IMAGENES CADA X SEGUNDOS */
 
