@@ -7,6 +7,19 @@
   scroll-behavior: smooth;
 }
 
+:root{
+    --color0: white;
+    --color1: rgb(44, 44, 44);
+    --color2: grey;
+    --color3: yellow;
+
+    --fuente1:"fuente1";
+    --fuente2:"fuente2";
+    --fuente3:"fuente3";
+
+    font-family: var(--fuente2);
+}
+
 .boton{
     background-color: var(--color0);
 
@@ -52,18 +65,6 @@
 }
 
 
-:root{
-    --color0: white;
-    --color1: black;
-    --color2: grey;
-    --color3: yellow;
-
-    --fuente1:"fuente1";
-    --fuente2:"fuente2";
-    --fuente3:"fuente3";
-
-    font-family: var(--fuente2);
-}
 
 /* Estilos del nap */
 
@@ -414,3 +415,69 @@ article{
         transform: rotate(40deg);
         transition: 1s;
     }
+
+    /* Estilos de footer */
+footer{
+    background-color:var(--color1);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+
+    color: white;
+    font-family: var(--fuente3);
+    padding: 4rem;
+}
+#logo_footer{
+    width: 100px;
+}
+#contenedor_footer{
+    width: 100%;
+    max-width: 2560px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    row-gap: 2rem; 
+}
+#contenedor_footer >:nth-child(2){
+    width: 100%;     
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    background-color: blueviolet;
+}
+#contenedor_footer >:nth-child(3){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    row-gap: 2rem;
+}
+#contenedor_footer .info_footer{
+    width: 30%;
+    min-width: 300px;
+    height: 300px;
+    background-color: aquamarine;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    row-gap: 2rem;
+}
+#contenedor_footer .info_footer ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+#contenedor_footer .info_footer ul a{
+    color:var(--color0);
+    text-decoration: none;
+}
+  
