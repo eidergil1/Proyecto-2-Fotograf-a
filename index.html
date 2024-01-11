@@ -34,9 +34,6 @@
         </div>
     </nav>
 
-
-
-
     <header>
         <div class="contenedor">
             <p>LA FOTOGRAFÍA</p>
@@ -50,16 +47,13 @@
         </div>
     </header>
 
-
-
-
     <main>
         <div id="hitoServicios"></div>
 
         <!-- SERVICIOS -->
         <section>
-            <h2 class=".anchoEstrecho">Nuestros Servicios Fotográficos</h2>
-            <article>
+            <h2>Nuestros Servicios Fotográficos</h2>
+            <article class="anchoEstrecho">
                 <h3>TUS FOTÓGRAFOS EN DONOSTIA</h3>
                 <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. <b>Veritatis voluptas</b> quidem fuga a,
                     velit esse ducimus ea consequatur quos omnis iure nihil, maxime, quis nemo officia natus architecto
@@ -68,7 +62,7 @@
                     Contactar
                 </div>
             </article>
-            <article>
+            <article class="anchoEstrecho">
                 <div id="hitoQuienesSomos"></div>
                 <h3>SOMOS UN EQUIPO DE FOTÓGRAS PROFESIONALES EN DFONOSTI</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae aspernatur adipisci veniam, veritatis
@@ -106,7 +100,7 @@
                         <div class="contenedor_foto">
                             <img src="./assets/img/servicio_4_600.jpg" alt="">
                         </div>
-                        <h4>embarazos y bebés</h4>
+                        <h4>Embarazos y bebés</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque rerum adipisci magni corrupti
                             incidunt laborum iste odio quaerat temporibus doloribus modi accusantium eum dolorum minima
                             sequi, delectus aut commodi optio.</p>
@@ -115,7 +109,7 @@
                         <div class="contenedor_foto">
                             <img src="./assets/img/servicio_5_600.jpg" alt="">
                         </div>
-                        <h4>embarazos y bebés</h4>
+                        <h4>Embarazos y bebés</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque rerum adipisci magni corrupti
                             incidunt laborum iste odio quaerat temporibus doloribus modi accusantium eum dolorum minima
                             sequi, delectus aut commodi optio.</p>
@@ -157,7 +151,7 @@
             <div id="hitoEquipo"></div>
             <h2>Nuestro equipo de fotografos en donosti</h2>
             <article class="anchoEstrecho">
-                <h3>kjghkjghkjkuj</h3>
+                <h3>Lorem ipsum dolor</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. velit quis temporibus, sint libero reiciendis voluptas repellendus? Error eligendi corrupti suscipit nisi voluptas deserunt! Ipsum sequi suscipit nobis nisi!</p>
                 <div id="contenedorEquipo">                        
                     <div class="persona">
@@ -171,7 +165,7 @@
                     <div class="persona">
                         <div class="imagen">
                             <img src="assets/img/avatar_objetivo.jpg" alt="">
-                            <img src="assets/img/avatar1_350.jpg" alt="">
+                            <img src="assets/img/avatar2_350.jpg" alt="">
                         </div>
                         <h4> Lorem ipsum</h4>
                         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, sunt.</p>
@@ -179,7 +173,7 @@
                     <div class="persona">
                         <div class="imagen">
                             <img src="assets/img/avatar_objetivo.jpg" alt="">
-                            <img src="assets/img/avatar1_350.jpg" alt="">
+                            <img src="assets/img/avatar3_350.jpg" alt="">
                         </div>
                         <h4> Lorem ipsum</h4>
                         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, sunt.</p>
@@ -192,15 +186,28 @@
 
     </main>
 
+    <!-- FOOTER Y CONTACTO -->
+    <div id="hitoContacto"></div>
     <footer>
+        <div id="contenedor_form">
+            <form action="./php/enviar.php" method="post">
+                <h2>Contacta con Nosotros</h2>
+                <input type="text" name="nombre" minlength="4" maxlength="40" placeholder="Nombre (mínimo 4 carácteres)" required>
+                <input type="email" name="correo" maxlength="100" placeholder="Correo">
+                <input type="tel" name="telefono" placeholder="Teléfono">
+                <textarea name="mensaje" minlength="10" maxlength="500" placeholder="Escribe aquí su mensaje"></textarea>
+                <input type="submit" class="boton" id="boton_form" value="ENVIAR">
+            </form>
+            <img src="./assets/img/servicio_6_350.jpg" alt="">
+        </div>
+
         <div id="contenedor_footer">
             <img src="assets/img/LOGO_500.png" alt="" id="logo_footer">
-
             <div>
                 <div class="info_footer">
                     <h4>mapa web</h4>                    
                     <ul>
-                        <li><a href="">Servicios</a></li>
+                        <li><a href=""></a>Servicios</li>
                         <li><a href=""></a>Álbum</li>
                         <li><a href=""></a>Quienes somos</li>
                         <li><a href=""></a>Contacto</li>

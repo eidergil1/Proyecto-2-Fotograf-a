@@ -8,7 +8,7 @@
 }
 
 :root{
-    --color0: white;
+    --color0: rgb(255, 255, 255);
     --color1: rgb(44, 44, 44);
     --color2: grey;
     --color3: yellow;
@@ -35,8 +35,10 @@
     cursor:pointer;
 }
 @media screen and (max-widht:540px){
-    background-color: var(--color3);
-    font-size: 1rem;
+    .boton{
+        background-color: var(--color3);
+        font-size: 1rem;
+    }
 }
 .boton:hover{
     border-color: var(--color0);
@@ -86,7 +88,7 @@ header{
 
 }
 header .contenedor {
-    margin-top:.5vh;
+    margin-top:12vh;
     margin-left: 2rem;
 
     width: 700px;
@@ -101,34 +103,35 @@ header .contenedor {
     color: var(--color0);
 
     user-select: none;
+
 }
 header .contenedor :nth-child(1){
-    font-size: 6.8vw;
-    line-height: 7vw;
+    font-size: 5vw;
+    line-height: 6vw;
 }
 header .contenedor :nth-child(2){
-    font-size: 4.4vw;
-    line-height: 5vw;
+    font-size: 3.2vw;
+    line-height: 3vw;
 }
 header .contenedor :nth-child(3){
-    font-size: 10.9vw;
-    line-height: 7.4vw;
+    font-size: 7.9vw;
+    line-height: 6.4vw;
 }
 header .contenedor :nth-child(4){
-    font-size: 3.5vw;
-    line-height: 5.8vw;
+    font-size: 2.56vw;
+    line-height: 3.8vw;
 }
 header .contenedor :nth-child(5){
-    font-size: 7.1vw;
-    line-height: 3.2vw;
+    font-size: 5.2vw;
+    line-height: 3.2vw
 }
 header .contenedor :nth-child(6){
-    font-size: 5.3vw;
-    line-height: 7.9vw;
+    font-size: 3.9vw;
+    line-height: 4.9vw;
 }
 header .contenedor :nth-child(7){
-    font-size: 14.4vw;
-    line-height: 8vw;
+    font-size: 10.8vw;
+    line-height: 7vw;
 }
 header .contenedor :nth-child(8){
     font-size: 1.2vw;
@@ -208,8 +211,7 @@ nav .sup{
     justify-content: center;
     align-items: center;
 
-    background-color: white;
-
+    background-color: var(--color0);
 }
 
 nav .sup img{
@@ -218,8 +220,6 @@ nav .sup img{
     z-index: 100;
     left: 1rem;
     top:0.5rem;
-
-
 }
 nav .inf{
     position: relative;
@@ -561,5 +561,26 @@ footer{
 #contenedor_footer .info_footer ul a{
     color:var(--color0);
     text-decoration: none;
+}
+
+footer form textarea{
+    height: 100px;
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 200px;
+    min-height: 100px;
+}
+footer form input{
+    height: 2rem;
+}
+#boton_form{
+    width: 10%;
+    min-width: 160px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+
+    padding:  inherit;
 }
   
