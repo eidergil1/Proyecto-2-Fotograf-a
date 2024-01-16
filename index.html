@@ -190,51 +190,80 @@
     <div id="hitoContacto"></div>
     <footer>
         <div id="contenedor_form">
-            <form action="./php/enviar.php" method="post">
-                <h2>Contacta con Nosotros</h2>
-                <input type="text" name="nombre" minlength="4" maxlength="40" placeholder="Nombre (mínimo 4 carácteres)" required>
-                <input type="email" name="correo" maxlength="100" placeholder="Correo">
-                <input type="tel" name="telefono" placeholder="Teléfono">
-                <textarea name="mensaje" minlength="10" maxlength="500" placeholder="Escribe aquí su mensaje"></textarea>
-                <input type="submit" class="boton" id="boton_form" value="ENVIAR">
-            </form>
-            <img src="./assets/img/servicio_6_350.jpg" alt="">
+          <form action="./php/enviar.php" method="post">
+            <h2>Contacta con Nosotros</h2>
+            <input type="text" name="nombre" placeholder="Nombre (mínimo 4 carácteres)">
+            <input type="text" name="correo" placeholder="Correo">
+            <input type="text" name="telefono" placeholder="Teléfono">
+            <textarea name="mensaje" placeholder="Escriba aquí su mensaje"></textarea>
+            <input type="submit" class="boton" id="boton_enviar" value="ENVIAR">
+          </form>
+          <img src="./assets/img/ICONO_150.png" alt="">
         </div>
-
+     
+       
+     
         <div id="contenedor_footer">
-            <img src="assets/img/LOGO_500.png" alt="" id="logo_footer">
-            <div>
-                <div class="info_footer">
-                    <h4>mapa web</h4>                    
-                    <ul>
-                        <li><a href=""></a>Servicios</li>
-                        <li><a href=""></a>Álbum</li>
-                        <li><a href=""></a>Quienes somos</li>
-                        <li><a href=""></a>Contacto</li>
-                    </ul>
-                </div>
-
-                <div class="info_footer">
-                    <h4>Contacto</h4>                    
-                    <ul>
-                        <li><a href=""><img src="assets/img/telephone.svg" alt="">
-                        </a>639525455</li>
-                        <li><a href=""></a>Álbum</li>
-                        <li><a href=""></a>Quienes somos</li>
-                        <li><a href=""></a>Contacto</li>
-                    </ul>
-                </div>
-
-                <div class="info_footer">
-                </div>
+          <img id="logo_footer" src="./assets/img/LOGO_500.png" alt="">
+     
+          <div>
+            <div class="info_footer">
+              <h4>Mapa Web:</h4>
+              <ul>
+                <li><a href="">Servicios</a></li>
+                <li><a href="">Álbum</a></li>
+                <li><a href="">Quienes Somos</a></li>
+                <li><a href="">Contacto</a></li>
+              </ul>
             </div>
-
-            <div>
-                <p>Aviso legal y cookies</p>
-                <p>Developer by Eider Gil</p>
+     
+            <div class="info_footer">
+              <h4>Contacto:</h4>
+              <ul>
+                <li>
+                  <a href="">
+                    <img class="iconos_contacto" src="./assets/img/telephone.svg" alt="">
+                    <p>943 123 123</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img class="iconos_contacto" src="./assets/img/mail.svg" alt="">
+                    <p>ikusifotografia@gmail.com</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img class="iconos_contacto" src="./assets/img/placeholder.svg" alt="">
+                    <p>C/ Juan Fermín, Juan F. Gilisagasti Kalea, 4, 1º, 20018 Donostia-San Sebastián</p>
+                  </a>
+                </li>
+              </ul>
             </div>
+     
+            <div class="info_footer" >
+              <h4>Síguenos en Redes Sociales</h4>
+              <div id="contenedor_rrss">
+                <a href="">
+                  <img src="./assets/img/fb.svg" alt="">
+                </a>
+                <a href="">
+                  <img src="./assets/img/insta.svg" alt="">
+                </a>
+                <a href="">
+                  <img src="./assets/img/twit.svg" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+     
+          <div>
+            <p>Aviso Legal y Política de Cookies</p>
+            <p>Developed by Leire Ariceta</p>
+          </div>
+     
         </div>
-    </footer>
+      </footer>
 
 
 <script src="./assets/js/slider.js"></script>
