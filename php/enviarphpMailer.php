@@ -28,10 +28,15 @@ if(isset($_POST)){
     //'Reply-To: info@webda.eus'."\r\n".
     'X-Mailer: PHP/'.phpversion();
 
-    //9-enviar correos de confirmacion
-    mail($destino,"Consulta de la web", $contenido,$cabecera); //correo que recibo yo
+    $correoEmisor = "info@webda.eus";
+    $nombreEmisor = "Webda - Eider";
+    $destinatario = $correo;
+    $nombreDestinatario = $nombre;
+    $asunto = "Consulta realizada en la web";
+    $cuerpo = $contenido;
+    
+    include "./includes/_configphpMailer.php";
 
-    mail($correo,"Hemos recibicido tu consulta",$contenido,$cabecera); //correo que recibe el cliente
 
     //10-redirigir a gracias
     header("location:../index.html?enviado=correo enviado!");
